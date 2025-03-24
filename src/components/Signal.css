@@ -1,0 +1,209 @@
+.signal-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  width: 90%;
+  margin: 20px auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.signal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.signal-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #007bff;
+  background-size: cover;
+  background-position: center;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.author {
+  font-size: 12px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.margin {
+  font-size: 16px;
+  font-weight: bold;
+  color: #1f1f1f;
+}
+
+.signal-header-button1 {
+  padding: 5px 15px;
+  border: 2px solid #28a745;
+  border-radius: 20px;
+  background-color: transparent;
+  color: #28a745;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.signal-header-button2 {
+  padding: 5px 15px;
+  border: 2px solid #3c3c3c;
+  border-radius: 20px;
+  background-color: transparent;
+  color: #3c3c3c;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.signal-header-button3 {
+  padding: 5px 15px;
+  border: 2px solid #28a745;
+  border-radius: 20px;
+  background-color: #28a745;
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.signal-body {
+  margin-bottom: 15px;
+}
+
+.signal-body-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  width: 100%; /* Đảm bảo signal-body-item full chiều ngang */
+  margin-right: 0; /* Xóa margin-right để không ảnh hưởng kích thước */
+  padding-right: 10px;
+}
+
+.signal-body-item .icon {
+  margin-right: 10px;
+  flex-shrink: 0;
+  text-align: right;
+  width: 30px;
+  font-size: 20px;
+}
+
+.signal-body-item .text {
+  flex: 1;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dropdown {
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  padding: 8px 10px 12px 10px;
+  width: 100%; /* Đảm bảo full chiều ngang */
+  box-sizing: border-box; /* Bao gồm padding trong width */
+  margin-top: 10px;
+}
+
+.dropdown-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.dropdown-header .text {
+  flex: 1;
+  text-align: left;
+  font-size: 14px;
+}
+
+.dropdown-header .dropdown-arrow {
+  text-align: right;
+}
+
+.signalfooter-button {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.signalfooter-button:hover {
+  background-color: #02458d;
+}
+
+.dropdown-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+  font-size: 14px;
+  color: #383838;
+  font-weight: bold;
+}
+
+.dropdown-item span:first-child {
+  text-align: left;
+  flex: 1;
+}
+
+.dropdown-item span:last-child {
+  text-align: right;
+  flex: 0;
+}
+
+.signal-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+}
+
+.signal-text-footer {
+  font-size: 12px;
+}
+
+.signal-mainternaire-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  margin-top: 15px;
+  width: 100%;
+  gap: 8px;
+  padding: 10px; /* Đồng bộ padding với .dropdown */
+  border: none;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  box-sizing: border-box; /* Bao gồm padding trong width */
+  font-size: 14px;
+}
+
+.signal-mainternaire-icon {
+  width: 20px;
+  height: 20px;
+}

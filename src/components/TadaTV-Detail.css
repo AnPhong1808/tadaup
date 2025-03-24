@@ -1,0 +1,42 @@
+/* Nền đen mờ 50% */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Màu nền đen với độ mờ 50% */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Đảm bảo modal luôn hiển thị trên cùng */
+  }
+  
+  /* Nội dung của modal */
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 80%;
+    max-height: 80vh; /* Giới hạn chiều cao modal */
+    overflow-y: auto; /* Nếu nội dung quá dài thì có thanh cuộn */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    position: relative;
+  }
+  
+  /* Nút đóng modal */
+  .close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: #000;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .close-modal:hover {
+    color: red;
+  }
+  

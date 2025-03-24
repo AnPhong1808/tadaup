@@ -1,0 +1,126 @@
+.report-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw; /* Chiếm toàn bộ chiều rộng màn hình */
+    height: 100vh; /* Chiếm toàn bộ chiều cao màn hình */
+    background-color: rgba(0, 0, 0, 0.5); /* Nền trắng trong suốt 30% */
+    z-index: 1000; /* Đảm bảo nó hiển thị trên các phần tử khác */
+    position: relative; /* Đảm bảo phần tử con có thể sử dụng position tuyệt đối */
+}
+
+.report-card {
+    background: #fff;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 14px;
+    max-width: 300px;
+    width: 90%;
+    margin: 0 auto; /* Căn giữa nếu có width cố định */
+    position: relative;
+}
+
+/* Nút đóng (X) ở góc trên bên phải */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    background: none;
+    border: none;
+    font-size: 14px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: #504f4f;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    color: #007bff; /* Đổi màu khi hover */
+}
+
+.report-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+.report-details {
+    margin-bottom: 20px;
+}
+
+.report-details h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.report-details p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #000000;
+    line-height: 1.8; /* Điều chỉnh giá trị này để tăng khoảng cách giữa các dòng */
+}
+
+.report-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.reportbot-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.report-button:hover, .reportbot-button:hover {
+    background-color: #0056b3;
+}
+
+.quizstarting-report-card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Căn giữa chính xác */
+    z-index: 10; /* Đảm bảo nó nằm trên lớp khác */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.report-box {
+    display: inline-flex; /* Điều chỉnh chiều rộng theo nội dung */
+    align-items: center;
+    background-color: black;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.report-icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+.report-answer {
+    font-size: 14px;
+}
+
+.bold-text {
+    font-weight: bold !important;
+    font-size: 25px !important; /* Đảm bảo kích thước chữ */
+}

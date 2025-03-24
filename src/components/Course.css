@@ -1,0 +1,187 @@
+.course {
+  display: flex;
+  flex-direction: column;
+  background-color: #2c2c2c;
+  border-radius: 20px;
+  margin: 20px auto;
+  margin-bottom: 0px;
+  padding: 0;
+  width: 90%;
+  position: relative;
+}
+
+.pic-container {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
+}
+
+.course-pic {
+  width: 100%;
+  max-height: 220px; /* Chiều cao tối đa 150px */
+  object-fit: cover;
+}
+
+.course-content {
+  padding: 15px;
+  text-align: left;
+  color: #ffffff;
+  margin-top: 10px;  /* Xóa khoảng cách trên của tiêu đề */
+  padding-top: 0; /* Xóa padding nếu có */
+}
+
+.course-footer-container {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.course-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+}
+
+.course-content h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+}
+
+.course-content p {
+  margin: 5px 0; /* Giảm khoảng cách trên/dưới của description */
+  font-size: 14px;
+  margin-bottom: 30px; /* Tạo khoảng cách giữa description và course-footer */
+}
+
+
+.status-line {
+  position: relative;
+  height: 6px;
+  width: 100%;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.status-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+.status-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #4caf50;
+  border-radius: 5px;
+}
+
+.status-text {
+  position: absolute;
+  font-size: 12px;
+  font-weight: bold;
+  color: #272727;  /* Màu chữ */
+  background-color: #ffffff;  /* Màu nền, ví dụ là màu xanh lá */
+  padding: 2px 6px;  /* Khoảng cách từ chữ đến viền nền */
+  border-radius: 8px;  /* Bo tròn các góc */
+  transform: translateX(-50%);  /* Căn giữa chữ theo chiều ngang */
+  left: 50%;  /* Đặt chữ vào giữa thanh */
+  top: -25px;  /* Đẩy chữ lên trên thanh */
+}
+
+.status-text-complete {
+  position: absolute;
+  font-size: 12px;
+  font-weight: bold;
+  color: #186ECC;
+  background-color: #ffffff; /* Màu nền cho trạng thái hoàn thành */
+  padding: 2px 6px;
+  border-radius: 8px;
+  top: -25px; /* Đẩy chữ lên trên */
+  white-space: nowrap;
+}
+
+/* Phần của Channel--------------------------------------------------------------- */
+/* Container cho các icon */
+.channel-footer-icons {
+  display: flex;
+  justify-content: flex-end; /* Căn phải */
+  gap: 20px; /* Khoảng cách giữa các icon */
+  padding: 5px;
+  align-items: center;
+}
+
+.channel-footer {
+  display: flex;
+  justify-content: space-between; /* Đặt các nhóm icon ở hai bên */
+  align-items: center;
+}
+
+.channel-icon-container.left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container từng icon */
+.channel-icon-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Khoảng cách giữa icon và số */
+
+  position: relative; /* Làm gốc để định vị tooltip */
+  cursor: pointer;
+}
+
+/* Style cho icon */
+.channel-icon {
+  width: 22px; /* Kích thước icon */
+  height: 22px;
+  object-fit: contain;
+}
+
+/* Căn chỉnh text */
+.channel-icon-container span {
+  font-size: 14px;
+  color: #ffffff; /* Màu chữ */
+}
+
+/* Tooltip */
+.channel-tooltip {
+  position: absolute;
+  bottom: calc(100% + 10px); /* Đặt ngay phía trên icon, cách 10px */
+  left: 50%;
+  transform: translateX(-50%); /* Căn giữa theo chiều ngang */
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 12px;
+  white-space: nowrap;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Tam giác nhỏ bên dưới tooltip */
+.channel-tooltip::before {
+  content: "";
+  position: absolute;
+  top: 100%; /* Đặt ngay bên dưới tooltip */
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+}
+

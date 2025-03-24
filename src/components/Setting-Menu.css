@@ -1,0 +1,46 @@
+.menu-container {
+    width: 100%;
+    border: 1px solid #949494; /* Viền của khung */
+    border-radius: 20px; /* Bo tròn 4 góc */
+    padding: 20px; /* Khoảng cách bên trong khung */
+    box-sizing: border-box; /* Đảm bảo padding không ảnh hưởng đến chiều rộng */
+    background-color: #ffffff; /* Màu nền của khung */
+    margin-top: 10px;
+  }
+  
+  .menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .menu-button {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+  }
+  
+  .icon-left {
+    width: 20px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .icon-right {
+    margin-left: auto; /* Đẩy phần tử mũi tên sang bên phải */
+  }
+  
+  .arrow-icon {
+    width: 16px;
+    height: auto;
+  }
+  
+  .divider {
+    margin: 10px 0;
+    border-top: 1px solid #ccc;
+  }
+  

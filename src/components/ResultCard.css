@@ -1,0 +1,128 @@
+.result-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw; /* Chiếm toàn bộ chiều rộng màn hình */
+    height: 100vh; /* Chiếm toàn bộ chiều cao màn hình */
+    background-color: rgba(0, 0, 0, 0.8); /* Nền trắng trong suốt 30% */
+    z-index: 1000; /* Đảm bảo nó hiển thị trên các phần tử khác */
+  }
+  
+  .result-card {
+    background: #fff;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+    width: 90%;
+      margin: 0 auto; /* Căn giữa nếu có width cố định */
+  }
+  
+  .result-card-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+  }
+  
+  .result-card-details {
+    margin-bottom: 20px;
+  }
+  
+  .result-card-details h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .result-card-details p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #000000;
+    font-size: 16px;
+    line-height: 1.8; /* Điều chỉnh giá trị này để tăng khoảng cách giữa các dòng */
+  }
+  
+  .result-card-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .result-card-button:hover {
+    background-color: #0056b3;
+  }
+
+  .quizstarting-result-card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Căn giữa chính xác */
+    z-index: 10; /* Đảm bảo nó nằm trên lớp khác */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .result-card-box {
+    display: inline-flex; /* Điều chỉnh chiều rộng theo nội dung */
+    align-items: center;
+    background-color: black;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .result-card-icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+  }
+  
+  .result-card-answer {
+    font-size: 14px;
+  }
+  
+  .result-card-container {
+    position: relative;
+  }
+  
+  .result-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .result-card-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+  }
+  
+  .result-card-button {
+    background-color: #186ECC;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .result-card-button:hover {
+    background-color: #033d7c;
+  }
+
+  .bold-text {
+    font-weight: bold !important;
+    font-size: 25px !important; /* Đảm bảo kích thước chữ */
+  }
+  

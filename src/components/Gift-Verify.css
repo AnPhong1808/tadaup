@@ -1,0 +1,58 @@
+.gift-verify-container {
+    position: fixed; /* Đảm bảo luôn ở trên màn hình */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Chiếm toàn bộ chiều rộng màn hình */
+    height: 100vh; /* Chiếm toàn bộ chiều cao màn hình */
+    background-color: rgba(0, 0, 0, 0.8); /* Nền tối mờ */
+    z-index: 1000; /* Đặt lớp trên cùng */
+    display: flex; /* Dùng flex để căn giữa nội dung */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+  }
+  
+  .gift-verify-card {
+    background: #fff; /* Nền trắng cho thẻ chính */
+    border: 2px solid #ddd; /* Đường viền nhạt */
+    border-radius: 15px; /* Bo góc */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+    text-align: center; /* Căn giữa văn bản */
+    max-width: 400px; /* Độ rộng tối đa */
+    width: 90%; /* Độ rộng mặc định */
+  }
+  
+  .gift-verify-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* Ảnh tròn */
+    margin-bottom: 25px; /* Khoảng cách dưới */
+  }
+  
+  .gift-verify-details {
+    margin-bottom: 20px;
+  }
+  
+  .gift-verify-message {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #000000; /* Màu chữ đen */
+    line-height: 1.8; /* Khoảng cách giữa các dòng */
+  }
+  
+  .gift-verify-button {
+    background-color: #007bff; /* Nút màu xanh */
+    color: #fff; /* Màu chữ trắng */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px; /* Bo góc nút */
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Hiệu ứng hover mượt */
+  }
+  
+  .gift-verify-button:hover {
+    background-color: #0056b3; /* Màu xanh đậm hơn khi hover */
+  }
+  

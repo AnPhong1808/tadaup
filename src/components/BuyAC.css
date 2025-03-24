@@ -1,0 +1,58 @@
+/* Mở rộng ô nhập số lượng AC và bo viền */
+.buyac-details input {
+    width: 100%; /* Để ô input rộng toàn bộ */
+    padding: 10px;
+    border-radius: 20px; /* Bo viền 20px */
+    border: 1px solid #ccc;
+    font-size: 14px;
+    margin-bottom:10px;
+    margin-top:10px;
+  }
+
+  .buyac-details p {
+    margin-bottom: 5px; /* Tăng khoảng cách giữa các đoạn văn bản */
+    font-size: 14px;
+  }
+  
+  /* Tạo kiểu cho ghi chú phía dưới ô nhập số lượng AC */
+  .buyac-details .note {
+    font-size: 14px;
+    color: #555;
+    font-style: italic;
+  }
+  
+  /* Tạo khoảng cách cho button */
+  .buyac-details button {
+    margin-top: 15px;
+    width: auto;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .buyac-details button:disabled {
+    background-color: #ddd;
+  }
+
+  /* Điều chỉnh kích thước của QR code */
+.qr-container {
+    text-align: center;
+  }
+  
+  .qr-code {
+    width: 100%; /* Thay đổi kích thước QR code */
+    height: 100%;
+    margin-bottom: 20px;
+  }
+  
+  /* Thêm khoảng cách giữa thời gian và các phần tử khác */
+  .qr-container p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  

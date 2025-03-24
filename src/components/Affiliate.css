@@ -1,0 +1,42 @@
+.affiliate-icon-left {
+    width: 30px; /* Set the width of the avatar */
+    height: 30px; /* Set the height of the avatar */
+    border-radius: 50%; /* Make the avatar circular */
+    background-color: green; /* Set the background color to green */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Hide the overflow in case the image doesn't fit perfectly */
+    margin-right: 15px;
+  }
+  
+  .affiliate-icon-left img {
+    width: 100%; /* Make the image fill the container */
+    height: 100%; /* Ensure the image covers the entire container */
+    object-fit: cover; /* Ensure the image covers the area properly */
+  }
+  
+  .affiliate-icon-left.default-avatar {
+    background-color: green; /* Default background color if the image is missing */
+    color: white; /* White text color for fallback */
+  }
+  
+  .total-ac-bonus {
+    padding: 10px;
+    background-color: #f0f0f0; /* Màu nền nhẹ cho phần tổng */
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex; /* Sử dụng flexbox để căn chỉnh */
+    justify-content: space-between; /* Chia không gian giữa phần chữ và phần giá trị */
+    color: #333;
+  }
+
+  .total-ac-bonus span {
+    text-align: left; /* Chữ "Total AC Bonus" canh lề trái */
+  }
+  
+  .total-ac-bonus .ac-bonus-value {
+    text-align: right; /* Giá trị AC Bonus canh lề phải */
+  }

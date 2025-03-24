@@ -1,0 +1,31 @@
+.rules-list {
+    margin-top: 16px;
+  }
+  
+  .rule-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  
+  .rule-index {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: #007bff; /* Màu xanh */
+    color: #fff;
+    font-weight: bold;
+    margin-right: 12px;
+  }
+  
+  .rule-text {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .QuizRules{
+    margin-top: -1vh;
+  }

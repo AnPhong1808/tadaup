@@ -1,0 +1,17 @@
+.botadd-container {
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    align-items: center; /* Căn giữa theo chiều ngang */
+    justify-content: center; /* Căn giữa theo chiều dọc */
+    background-color: #186ECC;
+    border-radius: 20px;
+    padding: 5px;
+    width: 90%;
+    margin: 20px auto;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding-bottom: 12px; /* Đẩy text lên */
+  }

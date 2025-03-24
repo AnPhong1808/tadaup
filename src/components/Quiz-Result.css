@@ -1,0 +1,76 @@
+@keyframes winnerEffect {
+  0% {
+    background-color: #28a745; /* Màu xanh ban đầu */
+  }
+  50% {
+    background-color: #8bc34a; /* Màu xanh sáng hơn */
+  }
+  100% {
+    background-color: #28a745; /* Màu xanh ban đầu */
+  }
+}
+
+.quiz-result-container {
+  background-color: #28a745; /* Màu xanh cho nền tổng thể */
+  padding: 20px;
+  max-width: 500px; /* Giới hạn chiều rộng tối đa để không bị quá rộng trên màn hình */
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center; /* Canh giữa tất cả các phần tử bên trong */
+  margin-top: 2.5vh; /* Dịch khối xuống dưới với margin-top */
+  margin-bottom: 1vh; /* Dịch khối xuống dưới với margin-top */
+  animation: winnerEffect 5s ease-in-out infinite; /* Áp dụng hiệu ứng động nền */
+}
+
+.quiz-result-item {
+  display: flex;
+  justify-content: center; /* Canh giữa phần tử quiz-result-item */
+}
+
+.quiz-result-icon-text {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Canh giữa icon và chữ */
+  background-color: #000; /* Nền đen bao icon và chữ "Câu trả lời đúng" */
+  padding: 0px 20px 0px 10px; /* Tăng thêm không gian bên phải bằng padding-right */
+  border-radius: 20px;
+  box-sizing: border-box; /* Đảm bảo padding không làm tăng kích thước phần tử */
+  white-space: nowrap; /* Ngăn ngừa xuống dòng */
+  width: fit-content; /* Chiều rộng vừa nội dung */
+  height: 35px;
+}
+
+.result-icon-container {
+  width: 32px;
+  height: 32px;
+  background-color: #000; /* Nền đen cho icon */
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.quiz-result-correct-answers {
+  font-size: 12px; /* Thay đổi kích thước font */
+  font-weight: bold;
+  color: white;
+}
+
+.quiz-result-time-label {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+.quiz-result-time-completion {
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+}

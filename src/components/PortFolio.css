@@ -1,0 +1,148 @@
+.incomechart-content-container {
+    width: 90%;
+    height: 250px;
+    margin: 20px auto;
+    padding: 15px; /* Giảm padding để nội dung không chiếm nhiều chiều cao */
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.timeframe-selector {
+    display: flex;
+    gap: 20px; /* Khoảng cách giữa các mục */
+    align-items: flex-start; /* Lấy lề trái làm trọng tâm */
+    font-size: 14px; /* Font chữ đồng nhất */
+    padding: 10px;
+  }
+  
+  .timeframe-selector label {
+    display: flex;
+    align-items: center; /* Cân đối theo trục ngang */
+    cursor: pointer;
+    gap: 10px; /* Khoảng cách giữa nút và chữ */
+  }
+  
+  .timeframe-selector input[type="radio"] {
+    width: 16px; /* Kích thước nút */
+    height: 16px;
+    accent-color: #0443d4; /* Màu của nút radio */
+  }
+
+  .funbot-title {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .portfolio-incomechart-content-container {
+  padding: 20px;
+}
+
+.portfolio-header-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-header-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.portfolio-header-title .portfolio-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.portfolio-divider {
+  margin-top: 10px;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.portfolio-timeframe-selector {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.portfolio-chart-container {
+  margin-top: 20px;
+}
+
+.portfolio-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-header-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.portfolio-header-title .portfolio-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.portfolio-divider {
+  margin-top: 10px;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+/* Điều kiện ngoại lệ cho full width */
+.portfolio-divider-fullwidth {
+  margin-top: 35px;
+  border-top: 1px solid #ccc;
+  position: absolute; /* Để phần tử không bị giới hạn bởi bất kỳ phần tử cha nào */
+  left: 50%; /* Đưa divider ra giữa màn hình */
+  transform: translateX(-50%); /* Đảm bảo canh chính xác vào giữa */
+  width: 90%; /* Chiếm 90% chiều rộng màn hình */
+  padding: 0px;
+}
+
+.balance-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 10px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.balance-list-end {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 10px;
+}
+
+.balance-title {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #555;
+}
+
+.balance-amount {
+  font-size: 18px;
+  font-weight: bold;
+  color: #222;
+}
+
+.balance-left {
+  display: flex;
+  align-items: center; /* Đảm bảo icon và chữ cùng nằm trên một trục ngang */
+  gap: 15px; /* Khoảng cách giữa icon và chữ */
+}
+
+.balance-icon {
+  width: 40px;
+  height: 40px;
+}

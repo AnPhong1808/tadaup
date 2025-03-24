@@ -1,0 +1,134 @@
+/* Container cho phần nhập liệu */
+.input-wrapper {
+    position: relative;
+    width: 80%; /* Đặt chiều rộng 80% cho ô nhập */
+    margin-bottom: 20px;
+  }
+  
+  .input-wrapper input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding-right: 40px; /* Để chừa chỗ cho icon bên phải */
+  }
+  
+  /* Icon tiền tệ trong ô nhập */
+  .currency-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .currency-img {
+    width: 30px;  /* Đảm bảo icon có kích thước đồng nhất */
+    height: 30px;
+  }
+  
+  /* Container chứa các phần tử swap */
+  .swap-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* Biểu tượng giữa hai ô nhập */
+  .swap-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #0077b3;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 10px; /* Khoảng cách giữa các phần tử */
+  }
+  
+  .swap-icon img {
+    width: 20px;
+    height: 20px;
+    transform: rotate(90deg); /* Xoay icon để có kiểu giống với các sàn giao dịch DEX */
+    filter: invert(100%);
+  }
+  
+  /* Các nút hành động */
+  button {
+    width: 80%;
+    padding: 10px;
+    background-color: #0077b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Thông báo lỗi */
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  /* Mặt nền */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+  
+  .report-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1001;
+  }
+  
+  .report-card {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .report-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .success-message {
+    color: green;
+    font-size: 14px;
+    margin-top: 10px;
+  }

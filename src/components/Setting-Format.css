@@ -1,0 +1,80 @@
+/* Tiêu đề chính */
+.setting-format-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  /* Chữ nổi bật */
+  .setting-format-highlight {
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  /* Đoạn mô tả */
+  .setting-format-description {
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+  
+  /* Tạo khoảng cách giữa các nhóm nội dung */
+  .setting-format-section {
+    margin-bottom: 30px;
+  }
+  
+  /* Tiêu đề nhóm nội dung */
+  .setting-format-subtitle {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  /* Danh sách với bullet point được thụt vào */
+  .setting-format-list {
+    padding-left: 14px;
+    font-size: 14px;
+    list-style-type: disc;
+  }
+  
+  .setting-format-list li {
+    margin-bottom: 10px;
+  }
+  
+  /* Nút Comeback */
+  .setting-format-comeback-button {
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 8px;
+  }
+  
+  .setting-format-comeback-button strong {
+    position: relative;
+    top: -2px; /* Đẩy chữ lên trên một chút */
+  }
+
+  /* Icon trong nút */
+  .setting-format-icon {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle; /* Giúp icon không bị lệch */
+  }
+  
+  /* Tạo hình tròn lựa chọn */
+.language-radio-circle {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+  
+  /* Khi được chọn, dấu tròn đổi màu */
+  .language-radio-circle.language-selected {
+    border-color: #303030;
+    background-color: #007bff;
+  }

@@ -1,0 +1,51 @@
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f8f9fa;
+  padding: 8px 0;
+  border-top: 1px solid #e0e0e0;
+
+  /* Giữ nguyên cấu trúc */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 1000;
+
+  /* Thêm chuyển động ẩn/hiện */
+  transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out; /* Thêm visibility */
+}
+
+.footer.hidden {
+  transform: translateY(100%);
+  visibility: hidden; /* Ẩn khi footer không visible */
+}
+
+.footer.visible {
+  transform: translateY(0);
+  visibility: visible; /* Hiện khi footer cần hiển thị */
+}
+
+.footer-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  font-size: 12.5px;
+}
+
+.footer-button:hover {
+  font-weight: bold;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+}
+
+.footer-text {
+  margin-top: 5px;
+  font-size: 12px;
+}

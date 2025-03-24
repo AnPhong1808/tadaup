@@ -1,0 +1,138 @@
+/* Container của toggle */
+.strategy-toggle {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  /* Nền của nút trượt */
+  .strategy-switch {
+    width: 40px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 20px;
+    position: relative;
+    transition: background-color 0.3s;
+  }
+  
+  /* Trạng thái "On" */
+  .strategy-switch.on {
+    background-color: #4caf50;
+  }
+  
+  /* Trạng thái "Off" */
+  .strategy-switch.off {
+    background-color: #ccc;
+  }
+  
+  /* Nút tròn bên trong */
+  .strategy-knob {
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s;
+  }
+  
+  /* Nút tròn di chuyển khi bật */
+  .strategy-switch.on .strategy-knob {
+    transform: translateX(20px);
+  }
+  
+  /* Nút tròn radio */
+.strategy-radio-option {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+  }
+  
+  .strategy-radio-option input[type="radio"] {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+  }
+  
+  .strategy-radio-option input[type="radio"]:checked {
+    background-color: #4caf50;
+    border-color: #4caf50;
+  }
+  
+  .strategy-radio-option input[type="radio"]:focus {
+    border-color: #222222;
+  }
+  
+  /* Ô nhập số */
+.strategy-number-input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 10px;
+    width: 100%
+  }
+  
+  .strategy-number-input-label {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .strategy-number-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease-in-out;
+    border-radius: 20px;
+  }
+  
+  .strategy-number-input:focus {
+    border-color: #4caf50;
+    outline: none;
+  }
+
+  .strategy-footer {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.strategy-button-container {
+    display: flex;
+    margin-right: 10px;
+    gap: 10px;
+}
+
+.strategy-footer-button {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+  
+.strategy-footer-button:hover {
+    background-color: #02458d;
+}
+
+.dropdown-icon {
+  width: 16px; /* Điều chỉnh kích thước theo mong muốn */
+  height: 16px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.dropdown-arrow img {
+  display: inline-block;
+  vertical-align: middle;
+}
