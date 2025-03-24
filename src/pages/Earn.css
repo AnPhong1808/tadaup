@@ -1,0 +1,61 @@
+.report-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Nền mờ */
+    z-index: 9999; /* Đảm bảo modal xuất hiện trên tất cả các phần tử khác */
+  }
+  
+  .report-modal .report-card {
+    z-index: 10000; /* Đảm bảo card của report không bị che khuất */
+  }
+
+  .spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40px;
+    position: fixed;
+  }
+  
+  .spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .filter-buttons-container {
+    width: 95%;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch; /* Hỗ trợ cuộn mượt trên thiết bị di động */
+    padding: 0px 0px 0px 0px;
+    scrollbar-width: none; /* Ẩn thanh cuộn trên Firefox */
+    -ms-overflow-style: none; /* Ẩn thanh cuộn trên IE/Edge */
+  }
+  
+  .filter-buttons-container::-webkit-scrollbar {
+    display: none; /* Ẩn thanh cuộn trên Chrome, Safari */
+  }
+  
+  .filter-buttons {
+    display: inline-flex;
+    gap: 10px; /* Khoảng cách giữa các nút */
+  }
+  
+  .filter-button {
+    flex-shrink: 0; /* Ngăn các nút co lại */
+  }

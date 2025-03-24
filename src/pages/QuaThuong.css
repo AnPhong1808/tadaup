@@ -1,0 +1,113 @@
+.QuaThuong {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App {
+  background-image: url("./bg.jpg"); /* Đường dẫn tương đối */
+  background-attachment: fixed; /* Làm cho ảnh nền cố định */
+  background-size: cover; /* Đảm bảo ảnh sẽ phủ hết phần tử */
+  background-position: center; /* Căn giữa ảnh */
+  background-repeat: no-repeat; /* Không lặp lại ảnh */
+  position: relative; /* Để cho phép thêm lớp phủ độ mờ */
+  min-height: 100vh; /* Đảm bảo chiều cao của .App ít nhất bằng chiều cao màn hình */
+}
+
+/* Căn lề bên trái cho các nút trong tab-menu */
+.tab-menu {
+  text-align: left; /* Căn lề trái cho nội dung trong div */
+  background-color: white; /* Nền trắng cho cả tab-menu */
+  width: 100%; /* Đảm bảo chiếm toàn bộ chiều rộng */
+  display: flex; /* Dùng flexbox để căn các nút */
+  justify-content: flex-start; /* Các nút sẽ căn trái */
+  padding: 0 20px; /* Khoảng cách giữa các nút và viền của tab-menu */
+}
+
+.tab-menu button {
+  font-size: 18px; /* Cỡ chữ */
+  background-color: white; /* Nền trắng */
+  border: none; /* Không có viền */
+  padding: 10px 20px; /* Khoảng cách xung quanh chữ */
+  cursor: pointer; /* Khi hover vào nút sẽ có con trỏ chuột là pointer */
+  outline: none; /* Xóa viền mặc định khi nhấn nút */
+  transition: all 0.3s ease; /* Hiệu ứng khi hover */
+  margin-left: 0; /* Căn lề trái cho nút */
+}
+
+/* Các nút đều không có dòng xanh mặc định */
+.tab-menu .btn_doithuong, .tab-menu .btn_tuthien {
+  border-bottom: none; /* Không có dòng xanh dưới các nút */
+}
+
+/* Dòng xanh dưới nút "Đấu TDU" */
+.tab-menu .btn_doithuong.active {
+  font-weight: bold; /* Chữ đậm khi Đấu TDU được chọn */
+  position: relative;
+}
+
+/* Dòng xanh dưới nút "Đấu USDT" */
+.tab-menu .btn_tuthien.active {
+  font-weight: bold; /* Chữ đậm khi Đấu TDU được chọn */
+  position: relative;
+}
+
+.tab-menu .btn_doithuong.active::after {
+  content: ''; /* Tạo một phần tử giả để thay đổi dòng dưới */
+  position: absolute;
+  bottom: 0;
+  left: 50%; /* Đặt dòng dưới ở giữa */
+  transform: translateX(-50%); /* Dịch chuyển nó về trung tâm */
+  width: 80%; /* Đặt chiều dài dòng dưới là 50% chiều rộng của nút */
+  border-bottom: 4px solid #186ECC; /* Dòng dưới màu xanh */
+}
+
+.tab-menu .btn_tuthien.active::after {
+  content: ''; /* Tạo một phần tử giả để thay đổi dòng dưới */
+  position: absolute;
+  bottom: 0;
+  left: 50%; /* Đặt dòng dưới ở giữa */
+  transform: translateX(-50%); /* Dịch chuyển nó về trung tâm */
+  width: 80%; /* Đặt chiều dài dòng dưới là 50% chiều rộng của nút */
+  border-bottom: 4px solid #186ECC; /* Dòng dưới màu xanh */
+}
+
+/* Hiệu ứng hover */
+.tab-menu button:hover {
+  background-color: #f0f0f0; /* Nền sáng khi hover */
+}
+
+

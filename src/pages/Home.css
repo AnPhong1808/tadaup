@@ -1,0 +1,101 @@
+.Home {
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.rectangle-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 9vh; /* Đặt margin-top theo tỷ lệ của chiều cao màn hình */
+}
+
+.rectangle {
+  width: 90%; /* Chiều ngang full màn hình */
+  height: 16vh;
+  background-color: #186ECC; /* Màu xanh */
+  border-radius: 20px; /* Bo góc */
+  box-sizing: border-box; /* Tính cả padding và border vào width */
+  display: flex; /* Flexbox để canh giữa nội dung */
+  flex-direction: column; /* Nội dung theo trục dọc */
+  align-items: center; /* Canh giữa theo chiều ngang */
+  justify-content: center; /* Canh giữa theo chiều dọc */
+}
+
+.home-circle {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 120px;
+  background-color: #333333; /* Màu xanh */
+  border-radius: 50%; /* Hình tròn */
+  position: absolute;
+  top: -8vh; /* Đè lên 1/2 biên trên */
+  overflow: hidden; /* Khống chế hình ảnh trong không gian hình tròn */
+  
+}
+
+.home-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cắt hình ảnh theo kích thước của hình tròn */
+}
+
+.rectangle-text {
+  margin-top: 50px; /* Để text nằm dưới hình tròn */
+  color: white; /* Màu chữ */
+  font-size: 14px;
+  text-align: center; /* Canh giữa chữ */
+  font-style: italic; /* Kiểu chữ nghiêng */
+  padding: 0 10px; /* Căn lề 2 bên 5px */
+}
+
+.title {
+  font-size: 22px;       /* Kích thước chữ */
+  text-align: left;    /* Canh giữa */
+  margin-top: 2vh;      /* Khoảng cách trên */
+  margin-left: 5%;
+  margin-bottom: 0vh;    
+  font-weight: bold;     /* Đậm */
+  color: #000000;           /* Màu chữ */
+}
+
+/* Custom styles cho swiper */
+.swiper-container {
+  width: 100%;
+}
+.content-wrapper {
+  padding: 0; /* Xóa padding ngoài content-wrapper nếu có */
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Đảm bảo pagination có thể hiển thị */
+.swiper-pagination {
+  bottom: 10px; /* Khoảng cách từ dưới lên */
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-pagination-bullet {
+  background-color: #888; /* Màu của các chấm bi */
+  width: 12px;  /* Kích thước dấu chấm bi */
+  height: 12px;
+  border-radius: 50%;  /* Làm tròn các dấu chấm bi */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #007bff;  /* Màu của dấu chấm bi khi đang được chọn */
+}
+

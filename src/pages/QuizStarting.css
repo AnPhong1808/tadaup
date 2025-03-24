@@ -1,0 +1,149 @@
+.quizstarting-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    padding-left: 1.5vh;  /* Canh lề trái 1.5vh */
+    padding-right: 1.5vh; /* Canh lề phải 1.5vh */
+    text-align: center;
+    background-color: #ffffff; /* Nền trắng */
+    color: #333; /* Màu chữ tối để dễ đọc */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+    position: relative; /* Đảm bảo căn chỉnh chính xác */
+    width: 100%; /* Chiếm toàn bộ chiều rộng */
+    max-width: 1200px; /* Giới hạn chiều rộng tối đa */
+    margin: 0 auto; /* Căn giữa phần tử container */
+    min-height: 100vh; /* Chiều cao ít nhất bằng 100% chiều cao viewport */
+    position: relative;
+}
+
+.quizstarting-header {
+    display: flex;
+    justify-content: space-between; /* Căn đều các phần tử trong header */
+    align-items: center; /* Căn chỉnh các phần tử theo chiều dọc */
+    width: 100%; /* Đảm bảo header chiếm hết chiều rộng của container */
+    margin-bottom: 10px; /* Giảm khoảng cách dưới header */
+}
+
+.quizstarting-timer-container {
+    margin-bottom: 10px; /* Giữ nguyên khoảng cách dưới thời gian */
+}
+
+.quizstarting-timer {
+    display: inline-block;
+    padding: 5px 15px;
+    border: 2px solid #000; /* Viền đen */
+    border-radius: 5px;
+    background-color: #000; /* Nền đen */
+    color: #fff; /* Chữ trắng */
+    font-size: 16px;
+    font-weight: bold; /* Chữ đậm */
+}
+
+.quizstarting-score-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Căn phải */    
+}
+
+.quizstarting-score {
+    display: flex;
+    align-items: center;
+    background-color: #000; /* Nền đen */
+    border: 2px solid #000; /* Viền đen */
+    border-radius: 5px;
+    padding: 5px 15px;
+    color: #fff; /* Chữ trắng */
+    font-size: 16px;
+    font-weight: bold; /* Chữ đậm */
+}
+
+.quizstarting-coin-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.quizstarting-question-number {
+    margin: 10px 0; /* Giảm khoảng cách giữa số câu hỏi và câu hỏi */
+    font-size: 16px; /* Giảm kích thước font chữ câu hỏi xuống 18px */
+    font-weight: bold;
+    text-align: center; /* Đặt text-align thành center */
+}
+
+.quizstarting-question {
+    margin-bottom: 20px;
+    font-size: 14px; /* Giảm kích thước font chữ câu hỏi xuống 18px */
+}
+.quizstarting-question h2 {
+    margin-bottom: 20px; /* Thêm khoảng cách dưới câu hỏi */
+}
+
+.quizstarting-answers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.quizstarting-answer {
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    background-color: #f9f9f9; /* Màu nền nhạt cho các đáp án */
+    text-align: left; /* Canh lề trái */
+    padding-left: 25px; /* Thêm khoảng cách từ lề trái */
+}
+
+.quizstarting-answer:hover {
+    background-color: #e6e6e6; /* Màu khi hover */
+    border-color: #000;
+}
+
+.quizstarting-answer.selected {
+    background-color: #d9f7be; /* Màu xanh nhạt cho đáp án đã chọn */
+    border-color: #52c41a;
+}
+
+.quizstarting-submit-button {
+    position: fixed; /* Đặt nút cố định ở dưới cùng màn hình */
+    bottom: 20px; /* Đặt nút cách đáy màn hình một chút */
+    left: 50%;
+    transform: translateX(-50%); /* Căn giữa nút */
+    background-color: #007bff; /* Màu xanh đậm */
+    color: #fff;
+    padding: 10px; /* Padding đều xung quanh */
+    width: 80%; /* Nút chiếm 80% chiều rộng màn hình */
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px; /* Font size là 16px */
+    font-weight: bold; /* Chữ đậm */
+    text-align: center; /* Căn giữa chữ */
+    white-space: nowrap; /* Đảm bảo chữ không bị xuống dòng */
+}
+
+.quizstarting-submit-button:hover {
+    background-color: #0056b3; /* Màu xanh đậm hơn khi hover */
+}
+
+.quizstarting-answer.correct {
+    background-color: #52c41a; /* Xanh lá */
+    border-color: #52c41a;
+    color: white;
+  }
+  
+  .quizstarting-answer.incorrect {
+    background-color: #ff4d4f; /* Đỏ */
+    border-color: #ff4d4f;
+    color: white;
+  }
+  
+  .quizstarting-submit-button.correct, .quizstarting-submit-button.incorrect {
+    background-color: #131313; /* Xanh lá */
+    color: white;
+  }
+
+  

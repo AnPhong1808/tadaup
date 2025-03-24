@@ -1,0 +1,401 @@
+/* Đặt chiều cao cho banner */
+.banner-header {
+  width: 100%;
+  height: 30vh; /* Banner chiếm 30% chiều cao viewport */
+  overflow: hidden;
+  position: relative; /* Để các phần tử con có thể được đặt ở vị trí tuyệt đối */
+}
+
+.backIcon {
+  position: absolute;
+  top: 1.5vh;
+  left: 2vw;
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  background-color: transparent;
+  border: none;
+  color: white; /* Màu sắc của biểu tượng */
+  cursor: pointer;
+  z-index: 10; /* Đảm bảo nút nằm trên banner */
+}
+
+.backIconImage {
+  width: 30px;
+  height: 30px;
+  object-fit: contain; /* Đảm bảo ảnh không bị kéo giãn */
+}
+
+.banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute; /* Đảm bảo ảnh được đặt tuyệt đối trong phần tử cha */
+  top: 0; /* Đảm bảo ảnh ở trên cùng */
+  left: 0; /* Đảm bảo ảnh ở bên trái */
+}
+
+/* Nền trắng với bo viền */
+.news-detail-container {
+  position: relative; /* Để các phần tử trong container có thể được đặt chính xác */
+}
+
+.news-detail-content {
+  position: relative; /* Đảm bảo nền trắng sẽ không bị thay đổi vị trí */
+  top: -20px; /* Đẩy nền trắng lên đè lên banner */
+  left: 0;
+  width: 100%; /* Chiều rộng đầy đủ */
+  min-height: 100vh; /* Chiều cao ít nhất bằng 100% chiều cao viewport */
+  background-color: white; /* Nền trắng */
+  border-radius: 20px; /* Bo tròn viền */
+  padding: 20px; /* Thêm khoảng cách bên trong */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng */
+  z-index: 10; /* Đảm bảo nền trắng nằm trên banner */
+  overflow: auto; /* Đảm bảo nội dung cuộn nếu vượt quá chiều cao */
+}
+
+/* Đảm bảo responsive */
+@media (max-width: 768px) {
+  .news-detail-content {
+    width: 100%; /* Hẹp hơn trên màn hình nhỏ */
+  }
+}
+.news-detail-content {
+  display: flex;
+  flex-direction: column; /* Đặt các phần tử theo chiều dọc */
+}
+
+.name-time-container {
+  display: flex;
+  justify-content: space-between; /* Căn lề trái và phải */
+  align-items: center; /* Căn các phần tử theo chiều dọc */
+}
+
+.share-icon-news {
+  margin-left: auto; /* Đẩy share-icon-news ra ngoài bên phải */
+  display: flex;
+  align-items: center; /* Căn giữa icon và text */
+  font-weight: bold;
+}
+
+.share-icon-news img {
+  margin-left: 1.5vw; /* Khoảng cách giữa icon và text */
+}
+
+.content-news {
+  margin-top: 20px;
+}
+
+.content-news-wrapper .content-news,
+.content-news-wrapper .content-news * {
+  font-family: inherit !important;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+}
+
+.share-link {
+  text-decoration: none; /* Loại bỏ gạch chân */
+  color: inherit; /* Giữ màu sắc mặc định của văn bản */
+}
+
+/* Đảm bảo icon có kích thước 18x18px */
+.social-icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;  /* Khoảng cách giữa icon và chữ */
+}
+
+/* Nút dẫn đến kênh Telegram */
+.telegram-channel-link {
+  display: flex;
+  justify-content: right;
+  align-items: center; /* Căn giữa theo chiều dọc */
+  margin-top: 30px; /* Tạo khoảng cách từ phần mô tả */
+}
+
+.go-to-telegram-button {
+  background-color: #383838;  /* Màu nền của nút */
+  color: white;  /* Màu chữ trắng */
+  padding: 8px 16px;  /* Kích thước của nút */
+  border-radius: 12px;  /* Bo tròn các góc của nút */
+  text-decoration: none;  /* Không gạch chân */
+  font-weight: bold;  /* Chữ đậm */
+  font-size: 14px;
+  text-align: center;  /* Canh giữa chữ trong nút */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Căn giữa icon và chữ */
+}
+
+.go-to-telegram-button:hover {
+  background-color: #0077b3;  /* Màu nền khi hover */
+}
+
+
+/* Vị trí nút clipIconImage */
+.clipIconImage {
+  position: absolute; /* Đặt vị trí tuyệt đối so với phần tử cha (banner-header) */
+  top: 50%; /* Canh giữa theo chiều dọc */
+  left: 50%; /* Canh giữa theo chiều ngang */
+  transform: translate(-50%, -50%); /* Đảm bảo nút thực sự nằm giữa */
+  width: 100px; /* Kích thước của biểu tượng */
+  height: 100px; /* Kích thước của biểu tượng */
+  background: none; /* Loại bỏ nền của nút */
+  border: none; /* Loại bỏ đường viền của nút */
+  cursor: pointer; /* Hiển thị con trỏ tay khi hover */
+  z-index: 10; /* Đảm bảo nút sẽ hiển thị trên tất cả các phần tử khác */
+}
+
+/* Khi di chuột vào nút clipIconImage */
+.clipIconImage:hover {
+  opacity: 0.8; /* Hiệu ứng khi hover vào nút */
+}
+
+.banner-info {
+  position: absolute;
+  bottom: 5vh;
+  left: 2vw;
+  align-items: center;
+  display: flex;
+  gap: 1.5vw; /* Tạo khoảng cách giữa các đối tượng */
+}
+
+.banner-info-icon img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Chuyển thành hình tròn */
+  margin-right: 1vw;
+  object-fit: cover; /* Đảm bảo giữ nguyên tỉ lệ */
+  display: block; /* Ngăn chặn khoảng trắng thừa */
+  overflow: hidden; /* Ngăn chặn hình ảnh bị tràn ra ngoài */
+}
+
+.banner-info-text {
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Các nút đều không có dòng xanh mặc định */
+.tab-menu .btn_tientrinh, .tab-menu .btn_thaoluan {
+  border-bottom: none; /* Không có dòng xanh dưới các nút */
+}
+
+.tab-menu .btn_tientrinh.active, .tab-menu .btn_thaoluan.active {
+  font-weight: bold; /* Chữ đậm khi Đấu TDU được chọn */
+  position: relative;
+}
+
+.tab-menu-course {
+    text-align: left; /* Canh chữ về lề trái */
+    margin-left: -6vw; /* Thêm khoảng cách từ lề trái nếu cần */
+    margin-bottom: 2vh; /* Tạo khoảng cách từ phần mô tả */
+}
+
+.banner-title {
+  position: absolute;
+  top: 5vh; /* Canh tiêu đề ở dưới cùng */
+  width: 90%;
+  left: 20px; /* Canh lề trái */
+  font-size: 24px;
+  color: white; /* Màu chữ trắng */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Đổ bóng cho chữ để dễ nhìn */
+  font-weight: bold;
+  z-index: 10;
+}
+
+.course-progress-container {
+  display: flex;
+  justify-content: flex-start; /* Canh trái */
+  flex-direction: column; /* Nội dung trong step hiển thị theo chiều dọc */
+  align-items: flex-start; /* Canh trái */
+  gap: 20px; /* Khoảng cách giữa các phần tử */
+  flex-wrap: wrap; /* Cho phép các phần tử xuống dòng khi cần */
+  margin-top: 2vh; /* Khoảng cách phía trên */
+}
+
+.course-step {
+  display: flex;
+  align-items: center; /* Căn giữa theo chiều dọc */
+  gap: 15px; /* Khoảng cách giữa vòng tròn và văn bản */
+}
+
+.course-circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.course-circle {
+  transform: rotate(-90deg); /* Quay vòng tròn để bắt đầu từ trên cùng */
+}
+
+.course-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Căn lề trái */
+}
+
+.course-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.course-description {
+  font-size: 14px;
+  color: #494949;
+}
+
+.course-time {
+  font-size: 14px;
+  font-style: italic;
+  color: #888;
+}
+
+.course-circle-text {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #186ECC; /* Màu xanh cho phần trăm */
+  font-size: 18px; /* Kích thước chữ */
+  font-weight: bold;
+}
+
+.course-percentage {
+  text-align: center;
+}
+
+.quiz-detail-title {
+  margin-bottom: 1.5vh; /* Điều chỉnh khoảng cách dưới title */
+}
+
+.QuizRank {
+  margin-top: 2vh; /* Khoảng cách bên trên toàn bộ phần */
+  margin-bottom: 2vh; /* Khoảng cách bên dưới toàn bộ phần */
+}
+
+.quiz-subtitle {
+  font-weight: bold; /* Chữ đậm */
+  font-size: 20px !important;
+  margin-bottom: 1vh; /* Khoảng cách phía dưới tiêu đề */
+  display: block; /* Đảm bảo xuống dòng */
+  text-align: center; /* (Tuỳ chọn) Căn giữa chữ */
+  color: #1f1f1f; /* (Tuỳ chọn) Màu chữ */
+  text-align: left; /* Căn lề trái */
+}
+
+/* Div hình chữ nhật bo 4 góc */
+.card-container {
+  border-radius: 20px;
+  border: 1px solid #ddd; /* Đường viền mờ */
+  padding: 2vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Để tạo bóng nhẹ */
+  margin-top: 2.5vh;
+}
+
+/* Phần 1: Title */
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+/* Phần 2: Nội dung */
+.card-content {
+  font-size: 14px;
+  color: #111111;
+  margin-bottom: 15px;
+}
+
+/* Đường phân chia giữa các phần */
+.card-divider {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 15px;
+}
+
+/* Phần 3: Bộ button chìm */
+.card-button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Canh lề phải */
+  gap: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: #000000;
+}
+
+.ideas-icon {
+  width: 24px;
+  height: 24px;
+}
+.arrow-icon {
+  width: 15px;
+  height: 15px;
+}
+
+.card-button span {
+  font-size: 14px;
+}
+
+.status-charity .status-line {
+  margin-top: 40px; /* Tăng khoảng cách */
+}
+
+.charity-value-icon {
+  display: flex; /* Sử dụng flexbox để căn chỉnh */
+  align-items: center; /* Căn giữa theo trục dọc */
+  font-weight: bold; /* Chữ đậm */
+  font-size: 16px; /* (Tùy chọn) Kích thước chữ */
+  gap: 2px; /* (Tùy chọn) Khoảng cách giữa icon và text */
+}
+
+.trading-chart {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  width: 100%; /* Hoặc một giá trị cụ thể như 600px */
+  height: 420px; /* Quan trọng: thêm chiều cao */
+}
+
+.chart-container {
+  width: 100%;
+  height: 300px;
+  min-width: 300px; /* Đảm bảo không bị width 0 */
+  min-height: 400px; /* Đảm bảo không bị height 0 */
+}
+
+.course-avatar-mentor {
+  position: absolute;
+  bottom: 5vh;
+  left: 2vw;
+  display: flex;
+  align-items: center;
+  gap: 1.5vw; /* Tạo khoảng cách giữa các đối tượng */
+}
+
+.mentor-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Icon hình tròn */
+  margin-right: 1vw;
+  object-fit: cover; /* Đảm bảo giữ nguyên tỉ lệ */
+}
+
+.banner-info-text {
+  font-size: 14px;
+  color: #ffffff;
+}

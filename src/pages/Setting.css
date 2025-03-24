@@ -1,0 +1,116 @@
+.setting-detail-container {
+    position: relative;
+    background-color: #ffffff !important;
+  }
+  
+  .bannersetting-header {
+    width: 100%;
+    height: 30vh; /* Chiều cao của banner */
+    position: relative;
+  }
+  
+  .bannersetting-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+   .avatarsetting img {
+    position: absolute;
+    top: 6vh; /* Kéo avatar xuống dưới banner, điều chỉnh theo nhu cầu */
+    left: 50%;
+    transform: translateX(-50%); /* Căn giữa avatar */
+    z-index: 10; /* Đảm bảo avatar ở trên banner */
+    width: 150px !important; /* Kích thước avatar */
+    height: 150px !important;
+    border-radius: 50%; /* Hình tròn */
+    border: 4px solid white; /* Viền trắng */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Hiệu ứng bóng */
+    object-fit: cover; /* Đảm bảo ảnh không bị méo và phủ đầy hình tròn */
+  }
+  
+  .setting-detail-content {
+    position: relative;
+    top: -100px; /* Đẩy nội dung lên để không bị che khuất */
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border-radius: 20px 20px 0 0;
+    padding: 20px;
+    padding-top: 90px;
+    min-height: 100vh;
+  }
+
+  .setting-detail-item {
+    display: flex;
+    align-items: center; /* Canh giữa theo chiều dọc */
+    margin-bottom: 16px; /* Khoảng cách giữa các item */
+  }
+  
+  .setting-detail-item-icon {
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0; /* Đảm bảo icon không co lại */
+    margin-right: 10px; /* Khoảng cách giữa icon và text */
+    object-fit: cover; /* Giữ tỷ lệ ảnh */
+  }
+  .setting-coin-icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0; /* Đảm bảo icon không co lại */
+
+    object-fit: cover; /* Giữ tỷ lệ ảnh */
+  }
+  
+  .setting-detail-item-text {
+    display: flex;
+    flex-direction: column; /* Hai dòng text xếp chồng lên nhau */
+    text-align: left; /* Căn lề trái */
+    font-weight: bold; /* Tô đậm chữ lớn */
+  }
+  
+  .setting-detail-item-text-small {
+    font-size: 14px;
+    color: rgb(3, 3, 3); /* Màu sắc cho chữ nhỏ */
+    margin-bottom: 2px; /* Khoảng cách giữa hai dòng */
+  }
+  
+  .setting-detail-item-text-large {
+    font-size: 25px;
+  }
+  .setting-coin-button {
+    font-size: 16px;
+  }
+  
+  .setting-detail-item {
+    flex: 1; /* Đảm bảo mỗi đối tượng phủ đầy không gian */
+    display: flex;
+    align-items: center; /* Canh giữa icon và text theo chiều dọc */
+    margin-top: 10px; /* Khoảng cách 10px giữa các item */
+    padding: 10px; /* Khoảng cách bên trong khung */
+    border: 1px solid rgb(150, 150, 150); /* Viền đen */
+    border-radius: 12px; /* Bo góc 4 cạnh */
+    background-color: #e6e6e6; /* Nền nhạt (tuỳ chỉnh) */
+  }
+
+  .setting-detail-row {
+    display: flex;
+    justify-content: space-between; /* Chia đều các đối tượng */
+    gap: 15px; /* Khoảng cách giữa hai đối tượng */
+  }
+
+  .setting-detail-item-deposit {
+    flex-direction: column;
+    border: 2px solid rgb(4, 128, 0);
+}
+.setting-detail-item-withdraw {
+    flex-direction: column;
+    border: 2px solid rgb(20, 105, 216);
+}
+
+.setting-detail-item-text-naprut{
+    padding: 5px;
+}

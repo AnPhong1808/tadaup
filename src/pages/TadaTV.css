@@ -1,0 +1,69 @@
+/* Overlay che toàn bộ màn hình */
+.tadatv-video-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9); /* Màu nền tối hơn */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* Container chứa video, full màn hình */
+  .tadatv-video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Nút đóng video */
+  .tadatv-close-video {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background: none;
+    color: white;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+  }
+  
+  /* Video hoặc iframe chiếm toàn màn hình */
+  .tadatv-video-player {
+    width: 100%;
+    height: 100%;
+    max-width: 100vw;
+    max-height: 100vh;
+    border: none;
+  }
+  
+
+  .clipIcon {
+    position: absolute;
+    top: 50%; /* Canh giữa theo chiều dọc */
+    left: 50%; /* Canh giữa theo chiều ngang */
+    transform: translate(-50%, -50%); /* Đảm bảo nút thực sự nằm giữa */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 11; /* Đảm bảo nút hiển thị trên banner */
+  }
+  .clipIconImage {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+  }
+  
+  /* Khi di chuột vào nút clipIconImage */
+  .clipIconImage:hover {
+    opacity: 0.8; /* Hiệu ứng khi hover vào nút */
+  }
+  
+  
